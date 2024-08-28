@@ -843,7 +843,7 @@ export interface ApiCategoryCategory extends Schema.CollectionType {
     Name: Attribute.String;
     Doctors: Attribute.String;
     Hospitals: Attribute.String;
-    Icon: Attribute.Media;
+    Icon: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -880,7 +880,7 @@ export interface ApiDoctorDoctor extends Schema.CollectionType {
     Year_of_experience: Attribute.String;
     About: Attribute.String;
     Categories: Attribute.String;
-    Image: Attribute.Media;
+    Image: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     Premium: Attribute.Boolean;
     Start_Time: Attribute.DateTime;
     End_Time: Attribute.DateTime;
@@ -920,7 +920,7 @@ export interface ApiSliderSlider extends Schema.CollectionType {
   };
   attributes: {
     Name: Attribute.String;
-    Imge: Attribute.Media;
+    Imge: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
